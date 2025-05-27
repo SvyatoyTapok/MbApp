@@ -17,4 +17,8 @@ export const styles = StyleSheet.create({
         marginVertical: 20,
         height: 40,
     },
+    loader:{
+        width: 100,
+        height: 100,
+    },
 });

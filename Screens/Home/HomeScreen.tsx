@@ -2,10 +2,15 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import styles from './styles';
 
-const HomeScreen = () => {
+interface HomeScreenProps {
+    name: string;
+    post: string;
+}
+
+const HomeScreen = ({ name, post }: HomeScreenProps) => {
     return (
-        <View>
-            <Text style={styles.text}>Hello world</Text>
+        <View style={styles.mainContainer}>
+            <Text style={styles.text}>Hello {name}, ты {post}</Text>
         </View>
     );
 };
